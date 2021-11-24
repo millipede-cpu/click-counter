@@ -1,0 +1,80 @@
+*, *::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;
+    background-color:rgb(163, 174, 236);
+    color:blueviolet;
+
+}
+
+#counter {
+    font-size: 6rem;
+}
+
+#btn-box {
+    display: flex;
+    gap: 1rem;
+
+}
+
+#btn-down {
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(220, 220, 247); 
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(6, 87, 238);
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 250ms ease-in-out,
+    transform 50ms ease-in-out;
+
+}
+
+#btn-up {
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(220, 220, 247); 
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(6, 87, 238);
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 250ms ease-in-out,
+    transform 50ms ease-in-out;
+    
+}
+
+#btn-down:hover, #btn-up:hover {
+background-color: cornflowerblue;
+}
+
+#btn-down:active, #btn-up:active {
+    transform:scale(0.9);
+}
+
+.negative {
+color:rgb(214, 12, 52);
+}
+
+.positive {
+color: rgb(18, 214, 18);
+}
